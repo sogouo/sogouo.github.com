@@ -6,7 +6,20 @@
     <description>Recent content on sogouo blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 22:53:37 +0800</lastBuildDate><atom:link href="https://sogouo.github.io/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 23:17:22 +0800</lastBuildDate><atom:link href="https://sogouo.github.io/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>最寒冷的冬天</title>
+      <link>https://sogouo.github.io/posts/2021-01-06/</link>
+      <pubDate>Wed, 06 Jan 2021 23:17:22 +0800</pubDate>
+      
+      <guid>https://sogouo.github.io/posts/2021-01-06/</guid>
+      <description>2021 最冷的时间来了，连续好几天降温。朋友圈晒各个地区天气，我也走一波，真真的太冷了！！！
+寒风凛冽，打脸疼，带着帽子都不大管用；冻的手麻木，手机都冰冷。
+今天看了100多页电子书，💪.. 一点点积累会越来越快..
+想法:
+​	用python写个脚本将服务生成log, 定时通过内容上传到阿里云osss上。</description>
+    </item>
+    
     <item>
       <title>Linux 常用命令之zip</title>
       <link>https://sogouo.github.io/linux-tool/</link>
