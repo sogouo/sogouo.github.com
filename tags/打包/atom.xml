@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>打包 on sogouo blog</title>
+    <link>https://sogouo.github.io/tags/%E6%89%93%E5%8C%85/</link>
+    <description>Recent content in 打包 on sogouo blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2021 22:53:37 +0800</lastBuildDate><atom:link href="https://sogouo.github.io/tags/%E6%89%93%E5%8C%85/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 常用命令之zip</title>
+      <link>https://sogouo.github.io/linux-tool/</link>
+      <pubDate>Wed, 06 Jan 2021 22:53:37 +0800</pubDate>
+      
+      <guid>https://sogouo.github.io/linux-tool/</guid>
+      <description>Linux 命令之 zip  该示例基于 Ubuntu 18.04.4 LTS, 其他ubuntu 操作一样也一样; centos zip 安装可能不一样
+ 如果 zip 不存在，可以执行下面命令:
+$ sudo apt install zip # 与之相反的是unzip 解压 $ sudo apt install unzip # 同时创建两文件 $ mkdir -p ~/linux-tool-example/ $ cd ~/linux-tool-example/ # 创建两个文件 $ touch linux-tool-zip.md linux-tool-unzip.md   将一个文件压缩
+$ zip linxu-tool.zip ./linux-tool-zip.md   将多个文件压缩
+$ zip linux-tool.zip ./linux-tool-zip.md ./linux-tool-unzip.md   通过匹配方式压缩
+$ zip linux-tool.zip ./linux-tool*.md   </description>
+    </item>
+    
+  </channel>
+</rss>

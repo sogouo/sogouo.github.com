@@ -6,13 +6,13 @@
     
     
     
-    <title>Tags - sogouo blog</title>
+    <title>Linux 常用命令之zip - sogouo blog</title>
     <meta name="author" content="sogouo">
-    <meta name="description" content="">
+    <meta name="description" content="Linux zip">
     <meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link href="https://sogouo.github.io/tags/atom.xml" rel="alternate" title="sogouo blog" type="application/atom+xml">
+    <link href="" rel="alternate" title="sogouo blog" type="application/atom+xml">
     <link href="https://sogouo.github.io/images/fav.ico" rel="shortcut icon">
     <style>
     @charset "UTF-8";
@@ -4208,32 +4208,81 @@ body {
 
     <div id="content" class="inner">
         
+<article class="post">
+    <h2 class="title">Linux 常用命令之zip</h2>
+    <div class="meta">
+        <div class="date">Published on: <time datetime='2021-01-06T22:53:37.000&#43;08:00' itemprop="datePublished">2021-01-06</time>
+</div>
+        <div class="tags">Tags: 
+
+<a href="https://sogouo.github.io/tags/zip">zip</a>
+
+<a href="https://sogouo.github.io/tags/linxu-zip">linxu zip</a>
+
+<a href="https://sogouo.github.io/tags/linux-zip-%E6%89%93%E5%8C%85">linux zip 打包</a>
+
+<a href="https://sogouo.github.io/tags/%E6%89%93%E5%8C%85">打包</a>
+
+<a href="https://sogouo.github.io/tags/%E5%8E%8B%E7%BC%A9">压缩</a>
+
+
+</div>
+    </div>
+    <div class="entry-content"><h4 id="linux-命令之-zip">Linux 命令之 zip</h4>
+<blockquote>
+<p>该示例基于 Ubuntu 18.04.4 LTS, 其他ubuntu 操作一样也一样; centos zip 安装可能不一样</p>
+</blockquote>
+<p>如果 zip 不存在，可以执行下面命令:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ sudo apt install zip
+
+<span style="color:#75715e"># 与之相反的是unzip 解压</span>
+$ sudo apt install unzip
+
+<span style="color:#75715e"># 同时创建两文件</span>
+$ mkdir -p ~/linux-tool-example/
+
+$ cd ~/linux-tool-example/
+
+<span style="color:#75715e"># 创建两个文件</span>
+$ touch linux-tool-zip.md linux-tool-unzip.md
+
+</code></pre></div><ul>
+<li>
+<p>将一个文件压缩</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  
+$ zip linxu-tool.zip ./linux-tool-zip.md
+</code></pre></div></li>
+<li>
+<p>将多个文件压缩</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ zip linux-tool.zip ./linux-tool-zip.md ./linux-tool-unzip.md
+</code></pre></div></li>
+<li>
+<p>通过匹配方式压缩</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ zip linux-tool.zip ./linux-tool*.md
+</code></pre></div></li>
+</ul>
+</div>
+
+<div class="meta">
+    
+</div>
+</article>
+
+
+<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
 
 
-<a href="https://sogouo.github.io/tags/go">go</a><sup class="tagcount">1</sup>
 
-<a href="https://sogouo.github.io/tags/java">java</a><sup class="tagcount">1</sup>
 
-<a href="https://sogouo.github.io/tags/linux-zip-%E6%89%93%E5%8C%85">linux-zip-打包</a><sup class="tagcount">1</sup>
 
-<a href="https://sogouo.github.io/tags/linxu-zip">linxu-zip</a><sup class="tagcount">1</sup>
-
-<a href="https://sogouo.github.io/tags/prospect-2021">prospect-2021</a><sup class="tagcount">1</sup>
-
-<a href="https://sogouo.github.io/tags/python">python</a><sup class="tagcount">1</sup>
-
-<a href="https://sogouo.github.io/tags/summary-2020">summary-2020</a><sup class="tagcount">1</sup>
-
-<a href="https://sogouo.github.io/tags/zip">zip</a><sup class="tagcount">1</sup>
-
-<a href="https://sogouo.github.io/tags/%E5%85%B3%E4%BA%8E%E6%88%91">关于我</a><sup class="tagcount">1</sup>
-
-<a href="https://sogouo.github.io/tags/%E5%8E%8B%E7%BC%A9">压缩</a><sup class="tagcount">1</sup>
-
-<a href="https://sogouo.github.io/tags/%E6%80%BB%E7%BB%93">总结</a><sup class="tagcount">1</sup>
-
-<a href="https://sogouo.github.io/tags/%E6%89%93%E5%8C%85">打包</a><sup class="tagcount">1</sup>
 
 
     </div>
