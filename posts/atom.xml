@@ -6,7 +6,53 @@
     <description>Recent content in Posts on sogouo blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 23:17:22 +0800</lastBuildDate><atom:link href="https://sogouo.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 13:31:12 +0800</lastBuildDate><atom:link href="https://sogouo.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devops Mysql Tool</title>
+      <link>https://sogouo.github.io/posts/devops-mysql-tool/</link>
+      <pubDate>Thu, 07 Jan 2021 13:31:12 +0800</pubDate>
+      
+      <guid>https://sogouo.github.io/posts/devops-mysql-tool/</guid>
+      <description>Mysql 复制数据表
+1、只复制表结构到新表
+CREATE TABLE `new table` LIKE `old table`; 2、复制表结构以及数据到新表
+CREATE TABLE `new table` SELECT * FROM `old table`; 3、复制旧表的数据到新表
+INSERT INTO `new table` SELECT * FROM `old talbe`; 4、复制旧表的数据到新表(假设两个表结构不一样)
+INSERT INTO 新表(字段1,字段2,.......) SELECT 字段1,字段2,...... FROM 旧表 开发工程实施方案</description>
+    </item>
+    
+    <item>
+      <title>Devops Summary</title>
+      <link>https://sogouo.github.io/posts/devops-summary/</link>
+      <pubDate>Thu, 07 Jan 2021 13:24:42 +0800</pubDate>
+      
+      <guid>https://sogouo.github.io/posts/devops-summary/</guid>
+      <description>Redis Redis 部署 Redis 日常 1、查看Redis 当前安装版本
+$ sudo redis-server --version $ sudo redis-server -V 2、查看 Redis 进程或者Redis 服务是否运行正常
+# 通过 redis 服务名称 $ ps aux | grep redis </description>
+    </item>
+    
+    <item>
+      <title>Rsyslog Summary</title>
+      <link>https://sogouo.github.io/posts/rsyslog-summary/</link>
+      <pubDate>Thu, 07 Jan 2021 13:05:15 +0800</pubDate>
+      
+      <guid>https://sogouo.github.io/posts/rsyslog-summary/</guid>
+      <description>一、Rsyslog ? RSyslog Documentatio
+Ubuntu 启动Syslog 服务 ubuntu version: Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-129-generic x86_64); Vmware
+1、查看Syslog 服务
+$ service rsyslog status 2、开启
+参考
+syslog 的配置与使用
+思考
+ubuntu 查看已安装的软件包
+How to Install MySQL on Ubuntu 18.04
+Nginx 跳转
+Nginx 配置两个域名url之前跳转 
+server { listen 80; listen 443; server_name a.com b.com; return 301 $scheme://d.com$request_uri; } Alphabetical index of variables
+Nginx 实现两个域名跳转</description>
+    </item>
+    
     <item>
       <title>最寒冷的冬天</title>
       <link>https://sogouo.github.io/posts/2021-01-06/</link>

@@ -6,13 +6,13 @@
     
     
     
-    <title>压缩 - sogouo blog</title>
+    <title>Rsyslog Summary - sogouo blog</title>
     <meta name="author" content="sogouo">
     <meta name="description" content="">
     <meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link href="https://sogouo.github.io/tags/%E5%8E%8B%E7%BC%A9/atom.xml" rel="alternate" title="sogouo blog" type="application/atom+xml">
+    <link href="" rel="alternate" title="sogouo blog" type="application/atom+xml">
     <link href="https://sogouo.github.io//images/fav.ico" rel="shortcut icon">
     <style>
     @charset "UTF-8";
@@ -4208,42 +4208,60 @@ body {
 
     <div id="content" class="inner">
         
+<article class="post">
+    <h2 class="title">Rsyslog Summary</h2>
+    <div class="meta">
+        <div class="date">Published on: <time datetime='2021-01-07T13:05:15.000&#43;08:00' itemprop="datePublished">2021-01-07</time>
+</div>
+        <div class="tags">Tags: 
+</div>
+    </div>
+    <div class="entry-content"><h4 id="一rsyslog-">一、Rsyslog ?</h4>
+<p><a href="https://www.rsyslog.com/doc/master/index.html">RSyslog Documentatio</a></p>
+<h4 id="ubuntu-启动syslog-服务">Ubuntu 启动Syslog 服务</h4>
+<p>ubuntu version: Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-129-generic x86_64); Vmware</p>
+<p>1、查看Syslog 服务</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ service rsyslog status 
+
+</code></pre></div><p>2、开启</p>
+<p>参考</p>
+<p><a href="https://blog.csdn.net/GentleCP/article/details/87918664">syslog 的配置与使用</a></p>
+<p>思考</p>
+<p><a href="https://zhuanlan.zhihu.com/p/57472336">ubuntu 查看已安装的软件包</a></p>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04">How to Install MySQL on Ubuntu 18.04</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1496125">Nginx 跳转</a></p>
+<p><a href="https://www.4spaces.org/nginx-two-domain-url-rewrite/">Nginx 配置两个域名url之前跳转 </a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">server <span style="color:#f92672">{</span>
+		listen 80;
+		listen 443;
+		server_name a.com b.com;
+		
+		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">301</span> $scheme://d.com$request_uri;
+<span style="color:#f92672">}</span>
+</code></pre></div><p><a href="https://nginx.org/en/docs/varindex.html">Alphabetical index of variables</a></p>
+<p><a href="https://segmentfault.com/q/1010000015157572">Nginx 实现两个域名跳转</a></p>
+</div>
+
+<div class="meta">
+    
+</div>
+</article>
+
+
+<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
 
 
 
-        
-        
-        
-        
-            
-            
-            <section class="archives"><h1 class="year">2021</h1><div class="top-border-padding"></div>
-        
-
-        <article>
-            <h2 class="title"><a href="https://sogouo.github.io/linux-tool/">Linux 常用命令之zip</a></h2>
-        	<div class="meta">
-                <span class="date">01-06</span>
-                <span class="tags">
-
-<a href="https://sogouo.github.io//tags/zip">zip</a>
-
-<a href="https://sogouo.github.io//tags/linxu-zip">linxu zip</a>
-
-<a href="https://sogouo.github.io//tags/linux-zip-%E6%89%93%E5%8C%85">linux zip 打包</a>
-
-<a href="https://sogouo.github.io//tags/%E6%89%93%E5%8C%85">打包</a>
-
-<a href="https://sogouo.github.io//tags/%E5%8E%8B%E7%BC%A9">压缩</a>
 
 
-</span>
-                
-        	</div>
-        </article>
-
-</section>
 
 
     </div>

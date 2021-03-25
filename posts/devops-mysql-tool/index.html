@@ -6,13 +6,13 @@
     
     
     
-    <title>压缩 - sogouo blog</title>
+    <title>Devops Mysql Tool - sogouo blog</title>
     <meta name="author" content="sogouo">
     <meta name="description" content="">
     <meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link href="https://sogouo.github.io/tags/%E5%8E%8B%E7%BC%A9/atom.xml" rel="alternate" title="sogouo blog" type="application/atom+xml">
+    <link href="" rel="alternate" title="sogouo blog" type="application/atom+xml">
     <link href="https://sogouo.github.io//images/fav.ico" rel="shortcut icon">
     <style>
     @charset "UTF-8";
@@ -4208,42 +4208,46 @@ body {
 
     <div id="content" class="inner">
         
+<article class="post">
+    <h2 class="title">Devops Mysql Tool</h2>
+    <div class="meta">
+        <div class="date">Published on: <time datetime='2021-01-07T13:31:12.000&#43;08:00' itemprop="datePublished">2021-01-07</time>
+</div>
+        <div class="tags">Tags: 
+</div>
+    </div>
+    <div class="entry-content"><p>Mysql 复制数据表</p>
+<p>1、只复制表结构到新表</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>new <span style="color:#66d9ef">table</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#f92672">`</span>old <span style="color:#66d9ef">table</span><span style="color:#f92672">`</span>;
+</code></pre></div><p>2、复制表结构以及数据到新表</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>new <span style="color:#66d9ef">table</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> <span style="color:#f92672">`</span>old <span style="color:#66d9ef">table</span><span style="color:#f92672">`</span>;
+</code></pre></div><p>3、复制旧表的数据到新表</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#f92672">`</span>new <span style="color:#66d9ef">table</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> <span style="color:#f92672">`</span>old talbe<span style="color:#f92672">`</span>;
+</code></pre></div><p>4、复制旧表的数据到新表(假设两个表结构不一样)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#960050;background-color:#1e0010">新表</span>(<span style="color:#960050;background-color:#1e0010">字段</span><span style="color:#ae81ff">1</span>,<span style="color:#960050;background-color:#1e0010">字段</span><span style="color:#ae81ff">2</span>,.......) <span style="color:#66d9ef">SELECT</span> <span style="color:#960050;background-color:#1e0010">字段</span><span style="color:#ae81ff">1</span>,<span style="color:#960050;background-color:#1e0010">字段</span><span style="color:#ae81ff">2</span>,...... <span style="color:#66d9ef">FROM</span> <span style="color:#960050;background-color:#1e0010">旧表</span>
+</code></pre></div><p>开发工程实施方案</p>
+</div>
+
+<div class="meta">
+    
+</div>
+</article>
+
+
+<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
 
 
 
-        
-        
-        
-        
-            
-            
-            <section class="archives"><h1 class="year">2021</h1><div class="top-border-padding"></div>
-        
-
-        <article>
-            <h2 class="title"><a href="https://sogouo.github.io/linux-tool/">Linux 常用命令之zip</a></h2>
-        	<div class="meta">
-                <span class="date">01-06</span>
-                <span class="tags">
-
-<a href="https://sogouo.github.io//tags/zip">zip</a>
-
-<a href="https://sogouo.github.io//tags/linxu-zip">linxu zip</a>
-
-<a href="https://sogouo.github.io//tags/linux-zip-%E6%89%93%E5%8C%85">linux zip 打包</a>
-
-<a href="https://sogouo.github.io//tags/%E6%89%93%E5%8C%85">打包</a>
-
-<a href="https://sogouo.github.io//tags/%E5%8E%8B%E7%BC%A9">压缩</a>
 
 
-</span>
-                
-        	</div>
-        </article>
-
-</section>
 
 
     </div>
